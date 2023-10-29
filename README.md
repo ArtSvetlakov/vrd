@@ -28,3 +28,5 @@ cmake --build build
 # How to build (DOS)
 
 Just convert "main.c" to ANSI encoding and compile it for example in GCC under DOS.
+For launch in DOS you may need cwsdpmi (DOS extender). 
+You can download it from here: http://sandmann.dotster.com/cwsdpmi/
