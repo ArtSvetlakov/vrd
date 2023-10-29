@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.4 FATAL_ERROR)
+project(vrd)
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+	set(CMAKE_C_FLAGS "-s")
+endif()
+add_executable(vrd main.c)
