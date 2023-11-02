@@ -1,3 +1,22 @@
+/*
+    VRD - Very random dungeon. A text-based rogue-like with RPG elements about a novice knight, an endless dungeon and defeating a dragon.
+	Copyright (C) 2023  ArtSvetlakov (Artemiy Svetlakov)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+
 #if _MSC_VER && !__INTEL_COMPILER
 	#define _CRT_SECURE_NO_WARNINGS
 #endif
@@ -834,7 +853,7 @@ int main()
 	while(1)
 	{
 		CLEARSCREEN;
-		printf("Choose the language:\n1) English\n2) Русский\n3) Español\n\0");
+		printf("VRD - Very random dungeon. A text-based rogue-like with RPG elements about a novice knight, an endless dungeon and defeating a dragon.\nCopyright (C) 2023  ArtSvetlakov (Artemiy Svetlakov)\nThis program comes with ABSOLUTELY NO WARRANTY.\nThis is free software, and you are welcome to redistribute it under certain conditions.\nFor details please read the LICENSE file.\n\n\nChoose the language:\n1) English\n2) Русский\n3) Español\n\0");
 		scanf("%s", player.choise);
 		if(strcmp(player.choise, "1") == 0 )
 		{
@@ -855,6 +874,9 @@ int main()
 	}
 	#else
 	langSelect = 1;
+	CLEARSCREEN;
+	printf("VRD - Very random dungeon. A text-based rogue-like with RPG elements about a novice knight, an endless dungeon and defeating a dragon.\nCopyright (C) 2023  ArtSvetlakov (Artemiy Svetlakov)\nThis program comes with ABSOLUTELY NO WARRANTY.\nThis is free software, and you are welcome to redistribute it under certain conditions.\nFor details please read the LICENSE file.\n\0");
+	PAUSE;
 	#endif
 	startScreen();
 	return 0;
